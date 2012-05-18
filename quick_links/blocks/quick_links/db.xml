@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="QuickLinks">
+		<field name="bID" type="I">
+			<key/>
+			<autoincrement/>
+		</field>
+		<field name="uID" type="I" />
+		<field name="name" type="C" size="255">
+			<default value=""/>
+		</field>
+		<field name="url" type="C" size="255">
+			<default value=""/>
+		</field>
+	</table>
+	<table name="QuickLinksAdded">
+		<field name="lID" type="I">
+			<key/>
+			<autoincrement/>
+		</field>
+		<field name="bID" type="I" />
+		<field name="uID" type="I" />
+		<field name="name" type="C" size="255">
+			<default value=""/>
+		</field>
+		<field name="url" type="C" size="255">
+			<default value=""/>
+		</field>
+	</table>
+</schema>
